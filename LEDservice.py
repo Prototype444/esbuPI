@@ -4,7 +4,7 @@ import os
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(3, GPIO.OUT)
-speed=os.environ['LEDSPEED']
+speed=int(os.environ['LEDSPEED'])
 
 while True:
 	GPIO.output(3,True)
